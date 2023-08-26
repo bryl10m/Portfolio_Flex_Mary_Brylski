@@ -1,0 +1,384 @@
+/* Universal Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    border: 0.2rem solid hsl(1, 96%, 10%); 
+}
+
+
+/* Header Styling */
+
+#header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: white;
+    background-color: hsl(1, 98%, 62%);
+    height: 10rem;
+    border: 0.25rem solid hsl(1, 96%, 10%);
+    min-width: 20%;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+#header h1 {
+    font-family: Ubuntu, "sans serif";
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.25rem;
+}
+
+#header h2 {
+    font-family: Ubuntu, "sans serif";
+    font-size: 1.9rem;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 0.5rem;
+    font-style: italic;
+}
+
+.nav  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    position: fixed;
+    top: 0;
+    width: 72%;
+    min-width: 0;
+}
+ 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;    
+}
+
+li {
+    border: 0.1rem solid hsl(1, 96%, 10%);
+    border-radius: 1rem;
+    box-shadow: 0.23rem 0.33rem 0.33rem hsl(1, 96%, 10%);
+    background-color: hsl(1, 100%, 49%);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-right: 2rem;
+    font-family: Ubuntu, "sans serif";
+    font-size: 1.2rem;
+    list-style: none;
+    flex: 1;
+}
+
+li:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: hsl(1, 100%, 49%);
+    background-color: white;
+}
+
+li:active {
+    box-shadow: none;
+}
+
+
+
+/* Introduction Styling */
+
+main {
+    width: 100%;
+    height: 30rem;
+    border: 0.1rem solid hsl(1, 96%, 10%);
+    background-image: url("./flamingo 1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 6rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 8% 5%; 
+    height: 70%;
+    border: 0.25rem solid hsl(1, 100%, 49%);
+    background-color: hsl(1, 95%, 99%);
+    border-radius: 0.7rem;
+    box-shadow: 0.7rem 1.25rem 1.25rem hsl(1, 96%, 10%);
+    animation-name: ellipse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding-top: 2rem;
+}
+
+
+@keyframes ellipse {
+    0% {border-radius: 10%;}
+    100% {border-radius: 50%;}
+}
+
+.intro p {
+    align-self: center;
+    flex-basis: 80%;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: hsl(1, 96%, 10%);
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+@keyframes largest {
+    0% {font-size: 1rem;}
+    100% {font-size: 1.5rem;}
+}
+
+/*@keyframes larger {
+    0% {font-size: 1.25rem;}
+    100% {font-size: 1.8rem;}
+}*/
+
+.intro-1 {
+    text-align: center;
+    letter-spacing: 0.5rem;
+    text-decoration: underline;
+    animation-name: largest;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.intro-2 {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.1rem;
+    /* animation-name: larger;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards; */
+}
+
+.intro-3 {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.1rem;
+    /* animation-name: larger;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: backwards; */
+}
+
+.intro-4 {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    /* animation-name: larger;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-fill-mode: backwards; */
+}
+
+/* Projects Styling */
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    /*border: 0.1rem solid hsl(1, 96%, 10%);*/
+    /*background-image: url("./flamingo 1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;*/
+    margin-bottom: 3rem;
+    padding-bottom: 4rem;
+    background-image: linear-gradient(to bottom, hsl(1, 96%, 10%) 0%, white 100%);
+
+}
+
+#projects h1 {
+    align-self: center;
+    width: 100%;
+    font-family: Ubuntu, "sans serif";
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.7rem 0.7rem;
+    margin: 3rem 0.7rem 0.7rem;
+    color: hsl(1, 96%, 10%);
+    background-color: white;
+    border: 0.2rem solid black;
+    border-radius: 0.7rem;
+}
+
+#projects img {
+    height: 35%;
+    width: 90%;
+    border: 0.28rem solid hsl(1, 80%, 90%);
+    box-shadow: 1rem;
+    border-radius: 0.7rem;
+    min-width: 100px;
+    
+}
+
+img:hover {
+    filter: saturate(3);
+}
+
+img:active {
+    filter:grayscale(1);
+}
+
+.photo-1, .photo-2, .photo-3 {
+    background-color: white;
+    padding: 2rem;
+    width: 30%;
+    box-shadow: 0.4rem 0.4rem 0.4rem black;
+    border: 0.2rem solid hsl(1, 100%, 49%);
+    border-radius: 0.7rem;
+    min-width: 120px;
+    margin-top: 2rem;
+}
+
+figcaption {
+    font-family: "Source Code Pro", "sans serif";
+    color: hsl(1, 96%, 10%);
+    font-weight: bold;
+}
+
+/* Skillset Styling */
+
+#skills {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+    border: 0.1rem solid hsl(1, 96%, 10%);
+    margin-bottom: 12rem;
+    background-color:hsla(1, 96%, 10%, 0.2);
+    
+}
+
+#skills h1 {
+    font-family: "Source Code Pro", monospace;
+    background-color: hsla(1, 98%, 62%);
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.7rem 0.7rem;
+    margin: 2rem 5rem;
+    color: hsl(1, 96%, 10%);
+}
+
+#skills h2 {
+    margin-bottom: 1rem;
+    font-family: Ubuntu, "sans serif";
+    padding-top: 0.5rem;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    color: hsl(1, 96%, 10%);
+}
+
+#skills h3, p {
+    text-align: left;
+    padding: 0rem 2.5rem;
+    line-height: 1.5;
+    color: hsl(1, 96%, 10%);
+}
+
+#skills h3 {
+    text-decoration: underline;
+    font-family: Ubuntu, "sans serif";
+}
+
+.skillset {
+    width: 100%;
+    border: 0.1rem solid hsl(1, 96%, 10%);
+    background-color:hsla(1, 98%, 62%, 0.5);
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.education {
+    width: 100%;
+    height: auto;
+    border: 0.1rem solid hsl(1, 96%, 10%);
+    background-color: hsla(1, 98%, 62%, 0.5); 
+    padding-bottom: 1rem;
+}
+ .education p {
+    font-style: italic;
+    line-height: 1.2;
+ }
+
+details {
+    text-align: left;
+    padding-left: 5rem;
+}
+
+/* Contact Styling */
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 72%;
+    min-width: 0;
+    color: white;
+    background-color: hsl(1, 98%, 62%);
+    padding-left: 2rem;
+}
+
+.contact-word h1 {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.contact-modes p {
+    word-break: break-all;
+    font-family: "Source Code Pro", monospace;
+}
+ 
