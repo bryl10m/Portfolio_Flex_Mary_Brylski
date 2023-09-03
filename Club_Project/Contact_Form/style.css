@@ -1,0 +1,69 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: auto;
+    border: 0.2em solid  hsl(121, 82%, 15%);
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    background-color: hsl(61, 87%, 70%);
+}
+
+h1 {
+    text-align: center;
+}
+
+.ftitle {
+    font-size: 1.5em; 
+}
+
+.ltitle {
+    font-size: 1.5em;
+    padding-right: 0.1em;
+}
+
+
+.etitle {
+    padding-right: 2em;
+    font-size: 1.5em
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 1em 5em;
+    height: auto;
+    
+}
+
+.send {
+    box-shadow: 0.5em 0.5em 0.5em hsl(121, 49%, 19%);
+    padding: 1em 1.8em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.send:hover, input:hover, textarea:hover {
+    color:black;
+    border: 0.2em ridge black;
+    
+}
+.send:active {
+    box-shadow: hidden;
+}
+
+input, textarea {
+    border: 0.2em solid hsl(91, 50%, 50%);
+    border-radius: 1em;
+    line-height: 1.5em;
+}

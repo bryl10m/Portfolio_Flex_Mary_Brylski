@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin: auto;
     border: 0.2rem solid hsl(1, 96%, 10%); 
@@ -49,6 +49,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     letter-spacing: 0.25rem;
+    flex: 0 3 50%;
 }
 
 #header h2 {
@@ -58,6 +59,7 @@ body {
     text-align: center;
     margin-left: 0.5rem;
     font-style: italic;
+    flex: 0 3 50%;
 }
 
 .nav  {
@@ -67,8 +69,9 @@ body {
     margin-bottom: 3rem;
     position: fixed;
     top: 0;
-    width: 72%;
-    min-width: 0;
+    left: 17%;
+    width: 71.75%;
+    min-width: 20%;
 }
  
 ul {
@@ -84,11 +87,11 @@ li {
     background-color: hsl(1, 100%, 49%);
     color: white;
     padding: 0.5rem 1rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
     font-family: Ubuntu, "sans serif";
     font-size: 1.2rem;
     list-style: none;
-    flex: 1;
+    flex-shrink: 5;
 }
 
 li:visited {
@@ -99,6 +102,7 @@ li:visited {
 a:hover {
     color: hsl(1, 100%, 49%);
     background-color: white;
+    padding: 0.5rem 2rem;
 }
 
 li:active {
@@ -124,7 +128,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    margin: 8% 5%; 
+    margin: 3% 8% 5% 8%; 
     height: 70%;
     border: 0.25rem solid hsl(1, 100%, 49%);
     background-color: hsl(1, 95%, 99%);
@@ -146,7 +150,7 @@ main {
 
 .intro p {
     align-self: center;
-    flex-basis: 80%;
+    flex: 0 3 80%;
     height: 80%;
     width: 80%;
     margin: auto;
@@ -164,11 +168,6 @@ main {
     100% {font-size: 1.5rem;}
 }
 
-/*@keyframes larger {
-    0% {font-size: 1.25rem;}
-    100% {font-size: 1.8rem;}
-}*/
-
 .intro-1 {
     text-align: center;
     letter-spacing: 0.5rem;
@@ -184,35 +183,22 @@ main {
     text-align: center;
     letter-spacing: 0.2rem;
     padding-bottom: 0.1rem;
-    /* animation-name: larger;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    transition-timing-function: ease-in-out;
-    animation-delay: 1s;
-    animation-fill-mode: backwards; */
 }
 
 .intro-3 {
     text-align: center;
     letter-spacing: 0.2rem;
     padding-bottom: 0.1rem;
-    /* animation-name: larger;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    transition-timing-function: ease-in-out;
-    animation-delay: 2s;
-    animation-fill-mode: backwards; */
 }
 
 .intro-4 {
     text-align: center;
     letter-spacing: 0.2rem;
-    /* animation-name: larger;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    transition-timing-function: ease-in-out;
-    animation-delay: 3s;
-    animation-fill-mode: backwards; */
+}
+
+.counter {
+    text-align: right;
+    color: gray;
 }
 
 /* Projects Styling */
@@ -224,11 +210,6 @@ main {
     justify-content: space-around;
     height: 100%;
     width: 100%;
-    /*border: 0.1rem solid hsl(1, 96%, 10%);*/
-    /*background-image: url("./flamingo 1.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;*/
     margin-bottom: 3rem;
     padding-bottom: 4rem;
     background-image: linear-gradient(to bottom, hsl(1, 96%, 10%) 0%, white 100%);
@@ -236,7 +217,8 @@ main {
 }
 
 #projects h1 {
-    align-self: center;
+    display: flex;
+    justify-content: center;
     width: 100%;
     font-family: Ubuntu, "sans serif";
     font-weight: bold;
@@ -266,6 +248,8 @@ img:hover {
 img:active {
     filter:grayscale(1);
 }
+
+
 
 .photo-1, .photo-2, .photo-3 {
     background-color: white;
@@ -298,13 +282,17 @@ figcaption {
 }
 
 #skills h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-family: "Source Code Pro", monospace;
     background-color: hsla(1, 98%, 62%);
     font-weight: bold;
     font-size: 2rem;
     padding: 0.7rem 0.7rem;
-    margin: 2rem 5rem;
+    margin: 2rem 0rem;
     color: hsl(1, 96%, 10%);
+    
 }
 
 #skills h2 {
@@ -356,29 +344,196 @@ details {
 /* Contact Styling */
 
 #contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
+    width: 80%; 
+    overflow: hidden; 
     position: fixed;
     bottom: 0;
-    width: 72%;
-    min-width: 0;
+    min-width: 20%; 
     color: white;
     background-color: hsl(1, 98%, 62%);
-    padding-left: 2rem;
+    border: 0.2rem solid hsl(1, 96%, 10%);
+    padding-bottom: 2rem;
 }
 
 .contact-word h1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     font-family: Georgia, serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     padding-top: 1rem;
     letter-spacing: 0.1rem;
+    margin-left: 20%;
+    flex-shrink: 2;
 }
 
 .contact-modes p {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
     word-break: break-all;
     font-family: "Source Code Pro", monospace;
+    margin-right: 20%;
+    flex-shrink: 1;
 }
- 
+
+/* Media Queries */
+
+@media only screen and (max-width: 379px) {
+
+    /* ruleset for screen sizes less than 380px */
+   
+    .nav  {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        position: fixed;
+        top: 0;
+        left: 10%;
+        width: 50%;
+        min-width: 10%;
+    }
+    
+    li {
+        align-self: flex-start;
+        font-size: 1rem;
+        padding: 0.2rem;
+        margin-right: 0.5rem;
+        
+    }
+
+    .intro {
+        margin-top: 20%;
+    }
+
+    .intro-4 {
+        display: none;
+    }
+
+    .photo-1, .photo-2, .photo-3 {
+        padding: 0.5rem;
+    }
+
+    #contact {
+        width: 50%;
+         
+        min-width: 10%; 
+    }
+
+    .contact-word h1 {
+        display: none;
+    }
+
+    .contact-modes p {
+        justify-content: flex-start;
+        font-size: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+
+    /* ruleset for screens 380px to 480px */
+
+    li {
+        font-size: 1rem;
+        padding: 0.2rem;
+        margin-right: 0.5rem;
+    }
+
+    .intro {
+        margin-top: 20%;
+    }
+
+    .intro-4 {
+        display: none;
+    }
+
+    .photo-1, .photo-2, .photo-3 {
+        padding: 0.5rem;
+    }
+
+    .contact-word h1 {
+        display: none;
+    }
+
+    .contact-modes p {
+        justify-content: center;
+        font-size: 1rem;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    
+    /* ruleset for screen sizes 481px to 600px */
+
+    .intro {
+        margin-top: 15%;
+    }
+
+    li {
+        /* padding: 0.2rem; */
+        margin-right: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .intro-4 {
+        display: none;
+    }
+
+    .photo-1, .photo-2, .photo-3 {
+        padding: 0.5rem;
+    }
+
+    .contact-word h1 {
+        margin-left: 35%;
+        font-size: 1.4rem;
+    }
+
+    .contact-modes p {
+        justify-content: center;
+        font-size: 1rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    
+    /* ruleset for screen sizes 601px to 768px */
+
+    .intro {
+        margin-top: 12%;
+    }
+
+    li {
+        padding: 0.5rem 1rem; 
+        margin-right: 1.8rem;
+        font-size: 1.2rem;
+    }
+
+
+    .photo-1, .photo-2, .photo-3 {
+        padding: 0.5rem;
+    }
+
+    .contact-word h1 {
+        margin-left: 35%;
+        font-size: 1.4rem;
+    }
+
+    .contact-modes p {
+        justify-content: center;
+        font-size: 1rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+}

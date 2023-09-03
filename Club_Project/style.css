@@ -1,0 +1,174 @@
+html {
+    text-align: center;
+    background-color: hsl(61, 82%, 89%);
+}
+
+body {
+
+}
+
+header {
+    display: block;
+    width: 100vw;
+    height: auto;
+    background-image: url("zinnia_yellow_red.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    font-family: Pangolin;
+    margin-bottom: 3em;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    padding: 1em;
+    display: inline-block;
+    border: 0.1em solid black;
+    background-color:hsl(61, 97%, 50%);
+    border-radius: 0.4em;
+    font-weight: bold;
+}
+
+h1 {
+    background-color:hsla(61, 97%, 50%, 0.9);
+    margin: 10% 30% 0% 30%;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#about {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 30em;
+    left: 0;
+    background-color: hsl(60, 48%, 56%);
+}
+
+#about img {
+    float: left; 
+    margin: -1rem 3rem 0rem 0rem;
+    padding-bottom: 1rem;
+    border: 1em
+}
+
+#about .path {
+    float: right;
+    margin: -1rem 0rem 0rem 3rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-family: Garamond, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+#about p {
+    text-align: left;
+    font-family: Garamond, serif;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    padding-top: 0rem;
+    font-weight: bold;
+}
+
+#events {
+    position: relative;
+    top: 35em;
+    left: 0; 
+    width: 100%;
+    height: auto;
+    border: 0.2em solid hsl(121, 64%, 47%);
+    background-color: white;
+    
+}
+
+.events {
+    position: relative; 
+    top: 2em;
+    left: 0;
+    text-align: left;
+    font-size: 1.2em;
+    height: auto;
+    border: 0.2em solid hsl(121, 64%, 47%);
+    margin: 2em 6em 4em;
+    background-image: radial-gradient(hsl(61, 97%, 50%), hsl(121, 64%, 47%));
+}   
+
+
+.date {
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+span {
+    margin-left: 25%;
+    font-weight: bold;
+}
+
+.description {
+    margin-left: 15%;
+    font-style: italic;
+}
+
+.events li {
+    list-style-type: none;
+}
+
+#location {
+    position: relative;
+    top: 40em;
+    left: 0; 
+    height: 15em;
+    background-color: hsl(61, 53%, 57%);
+    
+}
+
+.location {
+    background-color: white;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+
+#contact {
+    position: relative;
+    top: 45em;
+    left: 0; 
+    height: auto;
+    width: 100vw;
+    background-color: hsla(61, 97%, 50%, 0.8)
+}
+
+.contact-title {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.contact-modes ul {
+    height: 10em;
+    width: 60%;
+    text-align: left;
+    list-style-type: hidden;
+}
+
+.contact-modes li {
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin-left: 50%;
+}
+
+li .button {
+    border: 0.2em inset black;
+    padding: 1em 2em;
+}
