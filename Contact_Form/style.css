@@ -12,11 +12,12 @@ section {
     flex-wrap: wrap;
     width: 30%;
     height: auto;
-    border: 0.2em solid  hsl(121, 82%, 15%);
+    border: 0.2em solid  hsl(120, 78%, 7%);
+    border-radius: 0.5em;
     justify-content: center;
     align-items: center;
     margin-left: 25%;
-    background-color: hsl(61, 87%, 70%);
+    background-color: hsl(60, 11%, 89%);
 }
 
 h1 {
@@ -47,7 +48,7 @@ h1 {
 }
 
 .send {
-    box-shadow: 0.5em 0.5em 0.5em hsl(121, 49%, 19%);
+    box-shadow: 0.5em 0.5em 0.5em hsl(120, 49%, 19%);
     padding: 1em 1.8em;
     font-size: 1.2em;
     font-weight: bold;
@@ -58,12 +59,14 @@ h1 {
     border: 0.2em ridge black;
     
 }
+
 .send:active {
-    box-shadow: hidden;
+    box-shadow: 0em 0em 0em;
 }
 
+
 input, textarea {
-    border: 0.2em solid hsl(91, 50%, 50%);
+    border: 0.2em solid hsl(180, 96%, 45%);
     border-radius: 1em;
     line-height: 1.5em;
 }

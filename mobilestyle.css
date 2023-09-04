@@ -232,8 +232,8 @@ main {
 }
 
 #projects img {
-    height: 35%;
-    width: 90%;
+    height: 225px;
+    width: 200px;
     border: 0.28rem solid hsl(1, 80%, 90%);
     box-shadow: 1rem;
     border-radius: 0.7rem;
@@ -246,7 +246,7 @@ img:hover {
 }
 
 img:active {
-    filter:grayscale(1);
+    filter: grayscale(5); 
 }
 
 
