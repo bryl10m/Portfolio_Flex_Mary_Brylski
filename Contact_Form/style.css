@@ -10,14 +10,15 @@ body {
 section {
     display: flex;
     flex-wrap: wrap;
-    width: 30%;
+    /* width: 60%; */
     height: auto;
-    border: 0.2em solid  hsl(120, 78%, 7%);
+    border: 0.2em solid  hsl(320, 78%, 7%);
     border-radius: 0.5em;
     justify-content: center;
     align-items: center;
-    margin-left: 25%;
-    background-color: hsl(60, 11%, 89%);
+    margin-left: 0%;
+    background-color: hsl(320, 6%, 81%);
+    padding-left: 0.5em;
 }
 
 h1 {
@@ -48,7 +49,7 @@ h1 {
 }
 
 .send {
-    box-shadow: 0.5em 0.5em 0.5em hsl(120, 49%, 19%);
+    box-shadow: 0.5em 0.5em 0.5em hsl(140, 49%, 19%);
     padding: 1em 1.8em;
     font-size: 1.2em;
     font-weight: bold;
@@ -56,7 +57,7 @@ h1 {
 
 .send:hover, input:hover, textarea:hover {
     color:black;
-    border: 0.2em ridge black;
+    border: 0.2em ridge white;
     
 }
 
@@ -66,7 +67,7 @@ h1 {
 
 
 input, textarea {
-    border: 0.2em solid hsl(180, 96%, 45%);
+    border: 0.2em solid hsl(320, 73%, 15%);
     border-radius: 1em;
     line-height: 1.5em;
 }

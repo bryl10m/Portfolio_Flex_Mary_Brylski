@@ -1,0 +1,91 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(180, 48%, 5%);
+}
+
+/* Body Styling */
+
+h1 {
+    text-align: center;
+    margin: 2rem 0rem;
+    font-family: Arial, "sans serif";
+}
+
+/* Table Styling */
+
+table {
+    display: flex;
+    justify-content: center;
+    border: 0.2rem solid hsl(0, 0%, 6%);
+    margin: 0% 20%;
+    
+}
+
+th {
+    border: 0.2rem solid hsl(180, 84%, 7%);
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: hsla(180, 56%, 35%, 0.3);
+    font-size: 1.3rem;
+    font-family: Arial, "sans serif";
+}
+
+.even {
+    background-color:hsl(180, 43%, 85%);
+}
+
+td {
+    padding: 0.75rem;
+}
+
+.group {
+    width: 20%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, "sans serif";
+}
+
+.example {
+    width: 30%;
+    line-height: 1.3rem;
+}
+
+.note {
+    width: 30%;
+    font-style: italic;
+    line-height: 1.3rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 670px) {
+    table {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    table {
+        margin: 0;
+    }
+
+    th {
+        font-size: 1rem;
+    }
+
+    td {
+        font-size: 0.8rem;
+    }
+
+    .example {
+        width: 15%;
+    }
+}
