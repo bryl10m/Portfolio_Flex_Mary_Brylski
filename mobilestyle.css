@@ -32,7 +32,7 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     color: white;
-    background-color: hsl(1, 98%, 62%);
+    background-color: hsla(1, 98%, 62%, 0.8);
     height: 10rem;
     border: 0.25rem solid hsl(1, 96%, 10%);
     min-width: 20%;
@@ -77,36 +77,40 @@ body {
 ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     text-align: center;    
 }
 
 li {
-    border: 0.1rem solid hsl(1, 96%, 10%);
-    border-radius: 1rem;
+    border: 0.15rem solid hsl(1, 100%, 49%);
     box-shadow: 0.23rem 0.33rem 0.33rem hsl(1, 96%, 10%);
-    background-color: hsl(1, 100%, 49%);
-    color: white;
-    padding: 0.5rem 1rem;
-    margin-right: 4rem;
+    background-color: white;
+    color: hsl(1, 100%, 49%);
+    padding: 1rem 2rem;
     font-family: Ubuntu, "sans serif";
     font-size: 1.2rem;
+    font-weight: bold;
     list-style: none;
+    margin-right: 2rem;
     flex-shrink: 5;
 }
 
 li:visited {
     color: white;
+    background-color: hsl(0, 2%, 84%);
     text-decoration: underline;
 }
 
 a:hover {
     color: hsl(1, 100%, 49%);
     background-color: white;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
 }
 
 li:active {
     box-shadow: none;
+    border-bottom: none;
+    border-top: none;
 }
 
 
@@ -231,13 +235,12 @@ main {
     border-radius: 0.7rem;
 }
 
-#projects img {
-    height: 120px;
-    width: 100px;  
+.project {
+    max-width: 90%;  
+    height: auto;
     border: 0.28rem solid hsl(1, 80%, 90%);
     box-shadow: 1rem;
     border-radius: 0.7rem;
-    flex-shrink: 2;
 }
 
 img:hover {
@@ -248,16 +251,13 @@ img:active {
     filter: grayscale(5); 
 }
 
-
-
-.photo-1, .photo-2, .photo-3 {
+.photo {
     background-color: white;
     padding: 2rem;
-    width: 30%;
+    width: 40%;
     box-shadow: 0.4rem 0.4rem 0.4rem black;
     border: 0.2rem solid hsl(1, 100%, 49%);
     border-radius: 0.7rem;
-    flex-shrink: 1;
     margin-top: 2rem;
 }
 
@@ -412,7 +412,7 @@ details {
         display: none;
     }
 
-    .photo-1, .photo-2, .photo-3 {
+    .photo {
         padding: 0.5rem;
     }
 
@@ -452,7 +452,7 @@ details {
         display: none;
     }
 
-    .photo-1, .photo-2, .photo-3 {
+    .photo {
         padding: 0.5rem;
     }
 
@@ -486,7 +486,7 @@ details {
         display: none;
     }
 
-    .photo-1, .photo-2, .photo-3 {
+    .photo {
         padding: 0.5rem;
     }
 
@@ -519,7 +519,7 @@ details {
     }
 
 
-    .photo-1, .photo-2, .photo-3 {
+    .photo {
         padding: 0.5rem;
     }
 
