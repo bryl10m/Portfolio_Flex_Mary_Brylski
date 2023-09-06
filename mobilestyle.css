@@ -95,16 +95,16 @@ li {
     flex-shrink: 5;
 }
 
-li:visited {
-    color: white;
-    background-color: hsl(0, 2%, 84%);
+a:visited {
+    color: hsl(1, 96%, 10%);
     text-decoration: underline;
 }
 
 a:hover {
     color: hsl(1, 100%, 49%);
     background-color: white;
-    padding: 0.5rem;
+    font-size: 1.3rem;
+    
 }
 
 li:active {
