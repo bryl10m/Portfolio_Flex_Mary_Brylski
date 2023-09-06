@@ -202,14 +202,6 @@ main {
     letter-spacing: 0.2rem;
 }
 
-.counter {
-    position: relative;
-    right: 10%;
-    bottom: 0;
-    text-align: right;
-    color: gray;
-}
-
 /* Projects Styling */
 
 #projects {
