@@ -1,28 +1,41 @@
 html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    width: 80%;
+    display: flex;
+    flex: column wrap;
+    width: 100vh;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 60%; */
-    height: auto;
+    position: relative;
+    top: 20px;
+    left: 0;
     border: 0.2em solid  hsl(320, 78%, 7%);
     border-radius: 0.5em;
     justify-content: center;
     align-items: center;
     margin-left: 0%;
     background-color: hsl(320, 6%, 81%);
-    padding-left: 0.5em;
 }
 
 h1 {
     text-align: center;
+    font-size: 2em;
+}
+
+fieldset {
+    position: relative;
+    top: 10px;
+    width: 90%;
+    height: auto;
+    
 }
 
 .ftitle {
@@ -36,16 +49,13 @@ h1 {
 
 
 .etitle {
+    font-size: 1.5em;
     padding-right: 2em;
-    font-size: 1.5em
 }
 
 .button {
-    display: flex;
-    justify-content: center;
     padding: 1em 5em;
-    height: auto;
-    
+    height: auto;  
 }
 
 .send {
@@ -53,12 +63,6 @@ h1 {
     padding: 1em 1.8em;
     font-size: 1.2em;
     font-weight: bold;
-}
-
-.send:hover, input:hover, textarea:hover {
-    color:black;
-    border: 0.2em ridge white;
-    
 }
 
 .send:active {
@@ -70,4 +74,5 @@ input, textarea {
     border: 0.2em solid hsl(320, 73%, 15%);
     border-radius: 1em;
     line-height: 1.5em;
+    padding-left: 1em;
 }

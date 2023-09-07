@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club Contact Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 
     <section class="form">
         <form action="" method="" target="_blank">
-            <h1>Contact Us:</h1>
-            <label for="firstname" class="ftitle">First Name:</label>
-            <input type="text" id="firstname" name="name" required>
-            <br>
-            <label for="lastname" class="ltitle">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" required>
-            <br>
-            <label for="email" class="etitle">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
+        <h1>Contact Us:</h1>
+            <fieldset>
+                <label for="firstname" class="ftitle">First Name:</label>
+                <input type="text" id="firstname" name="name" onmouseover="whiteBorderf()" onmouseout="blackBorderf()" required>
+                <br>
+                <label for="lastname" class="ltitle">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" onmouseover="whiteBorderl()" onmouseout="blackBorderl()"required>
+                <br>
+                <label for="email" class="etitle">Email:</label>
+                <input type="email" id="email" name="email" onmouseover="whiteBordere()" onmouseout="blackBordere()" required>
+                <br><br>
+                <textarea name="comment" id="comment" cols="37" rows="10" max-length="255" placeholder="Enter comments here"  
+                        onmouseover="whiteBorderc()" onmouseout="blackBorderc()" required></textarea>
+                <br>
+                <div class="button">
+                    <input type="submit" id="submit" value="SUBMIT" class="send" onmouseover="whiteBorders()" onmouseout="blackBorders()">
+                </div>
+                <br>
+            </fieldset>
             
-            <textarea name="comment" id="commment" cols="37" rows="10" max-length="255" placeholder="Enter comments here" required></textarea>
-            <br>
-            <div class="button">
-                <input type="submit" value="SUBMIT" class="send" >
-                
-            </div>
-            <br>
         </form>
     </section>
     

@@ -11,10 +11,11 @@ This is a collection of front-end web development projects, the portfolio itself
 * Varying color schemes: Autologous, Complementary, Neutrals with a Brand Color
 * Animations including ellipse formation from rectangle and paragraphs with increasing font sizes
 * Working links to sections of pages and to projects
-* HTML forms with form validation and tables with CSS styling
+* HTML form with form validation and table with CSS styling
+* Javascript mouseout and mouseover scripts utilized for state changes on Contact Form
 
 ## How to Use: 
-Click and scroll through the site, which was created in Visual Studio Code.
+Click and scroll through the site.
 
 ## Technologies: 
 * Visual Studio Code
