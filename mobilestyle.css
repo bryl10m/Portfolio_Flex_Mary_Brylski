@@ -347,7 +347,7 @@ details {
     bottom: 0;
     min-width: 20%; 
     color: white;
-    background-color: hsla(1, 98%, 62%, 0.9);
+    background-color: hsla(1, 98%, 62%, 0.8);
     border: 0.2rem solid hsl(1, 96%, 10%);
     padding-bottom: 2rem;
 }
@@ -375,6 +375,12 @@ details {
     margin-right: 20%;
     flex-shrink: 1;
 }
+
+.contact-modes a:visited {
+    color: hsl(1, 96%, 10%);
+    text-decoration: underline;
+}
+
 
 /* Media Queries */
 
