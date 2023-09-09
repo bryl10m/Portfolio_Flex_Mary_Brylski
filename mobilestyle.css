@@ -282,7 +282,8 @@ figcaption {
     display: flex;
     justify-content: center;
     width: 100%;
-    font-family: "Source Code Pro", monospace;
+    font-family: Ubuntu, "sans serif";
+    letter-spacing: 0.1rem;
     background-color: hsla(1, 98%, 62%);
     font-weight: bold;
     font-size: 2rem;
@@ -356,9 +357,9 @@ details {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    font-family: Georgia, serif;
+    font-family: Ubuntu, "sans serif";
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
     padding-top: 1rem;
     letter-spacing: 0.1rem;
     margin-left: 20%;
